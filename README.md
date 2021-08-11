@@ -6,13 +6,13 @@ This is an unofficial implementation of [MixMatch: A Holistic Approach to Semi-S
 
 ### Requirements
 
-You can easily install all requirements by the commend
+You can easily install all requirements by the command
 
 ```
 pip install -r requirements.txt
 ```
 
- The biggest difference from the previous implementation is that it uses [Albumentations](https://github.com/albumentations-team/albumentations) for image augmentation instead of torchvision transforms. This can also be tuned by train configurations.
+ The biggest difference from the previous implementations is that it uses [Albumentations](https://github.com/albumentations-team/albumentations) for image augmentation instead of torchvision transforms. This can also be tuned by train configurations.
 
 ### Datasets
 
@@ -23,7 +23,7 @@ The code supports CIFAR-10, CIFAR-100, SVHN and STL-10 as mentioned in MixMatch 
 Train the model by 250 labeled data of CIFAR-10 dataset (default).
 
 ```
-python train.py --num-labels 250 --datasets CIFAR10
+python main.py --num-labels 250 --datasets CIFAR10
 ```
 
 The code includes different hyperparameters for config including
